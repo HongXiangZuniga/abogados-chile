@@ -1,0 +1,19 @@
+---
+import HeaderButton from "./HeaderButton.astro"
+---
+
+<header class="py-8  px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+    <div class="mx-auto text-center mb8 lg:mb-16">
+        <h2 class="mb-4 text-5xl tracking-tigh font-extrabold text-amber-50">
+            Abogados Chile
+        </h2>
+        <p class="font-light text-neutral-50 sm:text-xl dark:text-dark-50">
+            Tu caso en las mejores manos
+        </p>
+    </div>
+    <nav class="flex justify-center space-x-0">
+        <HeaderButton text="Inicio" href="/"></HeaderButton>
+        <HeaderButton text="Servicios" href="/contact"></HeaderButton>
+        <HeaderButton text="Contacto" href="services"></HeaderButton>
+    </nav>
+</header>
