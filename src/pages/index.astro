@@ -1,91 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Home from "../components/Home.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main style="text-align: center; padding:100px">
-		<div
-			style="display: flex; flex-direction: column; align-items: center;"
-		>
-			<div class="content">
-				<img
-					src="https://img.freepik.com/foto-gratis/gato-rojo-o-blanco-i-estudio-blanco_155003-13189.jpg"
-					alt="Foto"
-				/>
-				<p class="text">
-					Lorem Ipsum is simply dummy text of the printing and
-					typesetting industry. Lorem Ipsum has been the industry's
-					standard dummy text ever since the 1500s, when an unknown
-					printer took a galley of type and scrambled it to make a
-					type specimen book. It has survived not only five centuries,
-					but also the leap into electronic typesetting, remaining
-					essentially unchanged. It was popularised in the 1960s with
-					the release of Letraset sheets containing Lorem Ipsum
-					passages, and more recently with desktop publishing software
-					like Aldus PageMaker including versions of Lorem Ipsum.
-				</p>
-			</div>
-		</div>
-		<div class="content">
-			<p class="text">
-				Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy
-				text ever since the 1500s, when an unknown printer took a galley
-				of type and scrambled it to make a type specimen book. It has
-				survived not only five centuries, but also the leap into
-				electronic typesetting, remaining essentially unchanged. It was
-				popularised in the 1960s with the release of Letraset sheets
-				containing Lorem Ipsum passages, and more recently with desktop
-				publishing software like Aldus PageMaker including versions of
-				Lorem Ipsum.
-			</p>
-
-			<img
-				src="https://img.freepik.com/foto-gratis/gato-rojo-o-blanco-i-estudio-blanco_155003-13189.jpg"
-				alt="Foto"
-			/>
-		</div>
-		<div class="content">
-			<img
-				src="https://img.freepik.com/foto-gratis/gato-rojo-o-blanco-i-estudio-blanco_155003-13189.jpg"
-				alt="Foto"
-			/>
-			<p class="text">
-				Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy
-				text ever since the 1500s, when an unknown printer took a galley
-				of type and scrambled it to make a type specimen book. It has
-				survived not only five centuries, but also the leap into
-				electronic typesetting, remaining essentially unchanged. It was
-				popularised in the 1960s with the release of Letraset sheets
-				containing Lorem Ipsum passages, and more recently with desktop
-				publishing software like Aldus PageMaker including versions of
-				Lorem Ipsum.
-			</p>
-		</div>
+	<main>
+		<Home />
 	</main>
 </Layout>
 
-<style>
-	.content {
-		display: flex;
-		justify-content: center;
-		align-items: center; /* Centra verticalmente el contenido */
-		gap: 20px; /* Espacio entre la imagen y el texto */
-	}
-	.text {
-		font-light: 300;
-		color: #fffbeb;
-		font-size: 1rem;
-		text-align: center;
-	}
-	@media (min-width: 640px) {
-		.text {
-			font-size: 1.25rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-		}
-	}
-	img {
-		max-width: 400px; /* Ajusta el tamaño de la imagen a 30px */
-		max-height: 500px;
-	}
-</style>
